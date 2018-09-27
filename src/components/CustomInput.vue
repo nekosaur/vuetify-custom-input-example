@@ -23,7 +23,6 @@ export default {
       }, [this.internalValue])
     },
     genButtons () {
-      const v = this.internalValue.split()
       return [
         this.$createElement(VBtn, {
           props: {
