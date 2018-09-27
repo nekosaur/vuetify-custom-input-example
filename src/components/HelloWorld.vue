@@ -2,10 +2,11 @@
   <v-app>
     <v-content>
       <v-container>
-        <v-layout>
+        <v-layout column wrap>
           <v-form v-model="valid">
             <custom-input label="Custom input" v-model="value" :rules="rules"></custom-input>
           </v-form>
+          <h3>Form is {{ valid ? 'valid' : 'not valid' }}</h3>
         </v-layout>
       </v-container>
     </v-content>
